@@ -1,0 +1,21 @@
+CREATE TABLE shoe_store (id INTEGER PRIMARY KEY, shoe TEXT, quantity INTEGER, price INTEGER, sold_today INTEGER);
+INSERT INTO shoe_store VALUES (1,"sneaker", 10, 65, 7 );
+INSERT INTO shoe_store VALUES (3, "boots", 9, 70, 3);
+INSERT INTO shoe_store VALUES (4, "sandals", 15, 40, 12);
+INSERT INTO shoe_store VALUES (5, "heels", 13, 75, 1);
+INSERT INTO shoe_store VALUES (6, "loafers", 13, 55, 3);
+INSERT INTO shoe_store VALUES (7, "flats", 9, 25, 2);
+INSERT INTO shoe_store VALUES (8, "clogs", 3, 40, 3);
+INSERT INTO shoe_store VALUES (9, "dress shoes", 10, 80, 7);
+INSERT INTO shoe_store VALUES (10, "outdoor", 23, 35, 19);
+INSERT INTO shoe_store VALUES (11, "kids sneakers", 14, 20, 6);
+INSERT INTO shoe_store VALUES (12, "kids boots", 12, 25, 1);
+INSERT INTO shoe_store VALUES (13, "kids sandals", 16, 15, 12);
+INSERT INTO shoe_store VALUES (14, "kids dress shoes", 5, 30, 0);
+INSERT INTO shoe_store VALUES (15, "kids heels", 10, 25, 8);
+
+SELECT price FROM shoe_store ORDER BY price;
+
+SELECT sold_today FROM shoe_store WHERE sold_today > 5;
+
+SELECT SUM(quantity) FROM shoe_store 
